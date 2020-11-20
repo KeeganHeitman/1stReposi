@@ -1,0 +1,90 @@
+import pygame
+import time
+
+pygame.init()
+
+# defines the width and height of the display
+display_width = 600
+display_height = 680
+
+# defines block width and height
+block_height = 50 * 1.5
+block_width = 50 * 1.5
+
+factor = 25 * 1.5
+
+# defines colours
+white = (255, 255, 255)
+d_white = (250, 250, 250)
+black = (0, 0, 0)
+teal = (0, 128, 128)
+blue_black = (50, 50, 50)
+game_display = pygame.display.set_mode((display_width, display_height))
+pygame.display.update()
+clock = pygame.time.Clock()
+
+selected_family = "white"
+
+class piece:
+    x = 0  # x coordinate
+    y = 0  # y coordinate
+    rank = ""  # rank of the piece
+    life = True  # is the piece dead or alive
+    family = ""  # colour of the piece (black or white)
+    pic = ""  # photo of the piece
+    
+    
+class piece:
+    x = 0  # x coordinate
+    y = 0  # y coordinate
+    rank = ""  # rank of the piece, e.g. "pawn"
+    life = True  # is the piece dead or alive
+    family = ""  # colour of the piece ("black" or "white")
+    pic = ""  # photo of the piece
+
+    def __init__(self, x_position, y_position, p_rank, p_family):
+        self.x = x_position
+        self.y = y_position
+        self.rank = p_rank
+        self.family = p_family
+
+    @property
+    def file_name(self):
+        return "{self.rank}_{self.family}.png".format(self=self)
+
+    @property
+    def position(self):
+        return ((2 * self.x) * factor, ((2 * self.y) * factor))
+        
+       
+       
+       
+       
+       
+       def initialize_piece():
+    for piece in pie:
+        if piece.life:
+            img = pygame.image.load(piece.file_name)
+            game_display.blit(img, piece.position)
+            
+          #PLACEHOLDER  
+            class Piece:
+
+    def __init__(self, x, y, rank, family):
+        self.x, self.y = x, y
+        # rank of the piece, e.g. "pawn"
+        self.rank = rank
+        # colour of the piece ("black" or "white")
+        self.family = family
+        self.file_name = "{}_{}.png".format(rank, family)
+        self.img = pygame.image.load(self.file_name) 
+
+    @property
+    def position(self):
+        return ((2 * self.x) * factor, ((2 * self.y) * factor))
+
+
+def initialize_piece(pieces):
+    for piece in pieces:
+        if piece.life:
+            game_display.blit(piece.img, piece.position)
