@@ -5,61 +5,39 @@ p1crouchcheck = 0
 p2crouchcheck = 0
 p1jump = 0
 p2jump = 0
+p1push
+p2push
+p1backthrow
+p2backthrow
+p1forwardthrow
+p2forwardthrow
+p1Parry
+p2Parry
 
-__import__(pyinput)
-from pyinput.keyboard import Listener
-    
-__import__(logging)
-    
-with Listener() as listener:
-    Listener.join()
-    def on_press(A):
-        logging.info()
-        pass
-     def on_press(d):
-        pass
-     def on_press(s):
-        pass
-     def on_press(z):
-        pass
-     def on_press(x):
-        pass
-     def on_press(c):
-        pass
-     def on_press(v):
-        pass
-    def on_release(a)
-        pass
-    def on_release(s)
-    pass
-    def on_release(d)
-    pass
-    def on_release(z)
-    pass
-    def on_release(x)
-    pass
-    def on_release(c)
-    pass
-    def on_release(v)
-    pass
-    
-    
-    #Movement
-with Listener() as listener:
-    Listener.join()
-def on_press(arrow_up):
-pass
-def on_press(arrow_down):
-pass
-def on_press(arrow_left):
-pass
-def on_press(arrow_right):
-pass
-def on_release(arrow_up)
-pass
-def on_release(arrow_down)
-pass
-def on_release(arrow_left)
-pass
-def on_release(arrow_right)
-pass
+__import__(pygame)
+
+events = pygame.event.get()
+for events in events:
+    if event.type == pygame.KEYDOWN:
+    if event.key == pygame.K_LEFT
+    location -= 1
+    if event.key == pygame.K_RIGHT
+    location += 1
+   
+move_ticker = 0
+keys=pygame.key.get_pressed()
+if keys[K_LEFT]:
+    if move_ticker == 0:
+    move_ticker = 10
+    location -= 1
+    if location == -1
+        location = 0
+if keys[K_RIGHT]:
+    move_ticker == 0:
+    move_ticker = 10
+    location+=1
+    if location == 5:
+        location ==4
+
+if move_ticker > 0:
+    move_ticker-= 1
