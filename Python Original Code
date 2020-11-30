@@ -16,6 +16,13 @@ p2Parry
 
 __import__(pygame)
 
+pygame.time.delay.(XXXXXXXXXXXXXXXXXXXX)
+
+clock = pygame.time.Clock()
+flag=true
+while flag:
+    clock.tick(NUMBER OF ANIMATION IMAGES)
+    
 events = pygame.event.get()
 for events in events:
     if event.type == pygame.KEYDOWN:
@@ -41,3 +48,10 @@ if keys[K_RIGHT]:
 
 if move_ticker > 0:
     move_ticker-= 1
+
+location-=1
+iflocation==-1:
+    location=0
+    
+location -= 1
+location = max(800,600)
