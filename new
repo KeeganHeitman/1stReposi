@@ -1,0 +1,56 @@
+import pygame
+
+import sys
+
+pygame(init)
+
+spec=0
+k_quit = 0
+kick = 0
+jab = 0
+up = 0
+down = 0
+left = 0
+right = 0
+player = 1
+
+pygame.display.set((800,800))
+
+pygame.display.update()
+
+white = (255, 255, 255)
+black = (0, 0, 0)
+
+screen.fill(white)
+
+pygame.draw.rect(0,200,800,200)
+  fill(black)
+
+pygame.draw.lines [(0,800),(800,800),(0,0),(800,0)]
+  collideany = TRUE
+pygame.display.update
+
+for event.type.get(keys):
+  keys = 0
+    set keys = TRUE
+      if keys = TRUE
+      when keys(K_DOWN) then set down = TRUE
+        if event.type
+      when keys(K_UP) then set up = TRUE
+        if event.type
+      when keys(K_LEFT) then set left = TRUE
+       if event.type
+     when keys(K_RIGHT) then set right = TRUE
+       if event.type
+     when keys(K_z) then set jab = TRUE
+        if jab = TRUE then transform(Player.png(PlayerJab.png))
+     when keys(K_x) then set kick = TRUE
+        if kick = TRUE then transform(Player.png(PlayerKick.png))
+      when keys(K_c) then set spec = TRUE
+        if spec = true then transform(Player.png(PlayerSpecial.png))
+  
+  when keys(K_ESCAPE) then set k_quit = TRUE
+
+  for event.type.get(keys):
+    if event.type(keys_quit) == TRUE
+      pygame.quit(); sys.exit();
